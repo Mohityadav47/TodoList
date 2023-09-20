@@ -27,7 +27,7 @@ setmainTask(copytask)
 
 }
 
-let renderTask =  <h2 className='text-black'> No Task available</h2>
+let renderTask =  <h2 className='text-lg text-black'> No Task available</h2>
 if(mainTask.length>0){
 
   renderTask = mainTask.map((t,i)=>{
@@ -37,7 +37,7 @@ if(mainTask.length>0){
     <h6  className='text-lg font-semibold text-black'> {t.desc}</h6>
     
     </div>
-    <button className='bg-red-400 text-white rounded px-4 py-3 font-bold' onClick={()=>{deletehandler(i)}}>delete</button></li>
+    <button className='bg-red-400 text-white rounded px-4 py-3 font-bold' onClick={()=>{deletehandler(i)}}>Delete</button></li>
     
     
     
@@ -53,7 +53,7 @@ onChange={(e)=>{
 }}
 
 />
-<input type='text' className='text-2xl border-2 border-zinc-800 m-5 px-4 py-2 text-black' placeholder= 'Enter desc here' value={desc} onChange={(e)=>{
+<input type='text' className='text-2xl border-2 border-zinc-800 m-5 px-4 py-2 text-black' placeholder= 'Enter Desc here' value={desc} onChange={(e)=>{
 
 
   setdesc(e.target.value)
